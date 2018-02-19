@@ -1,0 +1,4 @@
+node_modules/
+public/dist/
+src/config/jest.js
+src/config/dev.js

@@ -1,0 +1,87 @@
+.gifs-list-container {
+  align-items: center;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gifs-filter-container {
+  display: flex;
+  justify-content: center;
+  margin-top: $s-size;
+  width: 100%;
+}
+
+.individual-gif {
+  cursor: pointer;
+  height: 18rem;
+  object-fit: cover;
+  padding: $s-size;
+  width: 18rem;
+}
+
+.individual-gif-container {
+  height: 15rem;
+  margin: 1rem;
+  width: 15rem;
+  background-size: cover;
+  transform: scale(1, 1);
+  transition: transform .6s;
+  @media (min-width: $desktop-breakpoint) {
+    height: 18rem;
+    margin: 1.1rem;
+    width: 18rem;
+  }
+}
+
+.individual-gif-container:not(.no-hover):hover {
+  object-fit: cover;
+  background-size: auto;
+  @media (min-width: $desktop-breakpoint) {
+    z-index: 99 !important;
+    transform: scale(1.5, 1.5);
+  }
+  .individual-gif-info {
+    opacity: 1;
+  }
+}
+
+.individual-gif-info {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  opacity: 0;
+  transition:opacity 1s ease-in-out;
+
+}
+
+.modal-container {
+  height: 80vw;
+  background-size: cover;
+  @media (min-width: $desktop-breakpoint) {
+    height: 50vw;
+  }
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: $s-size;
+  @media (min-width: $desktop-breakpoint) {
+    margin: $m-size;
+  }
+}
+
+.img-search {
+  cursor: pointer;
+  margin-left: $s-size;
+  width: 4rem;
+  height: 4rem;
+  @media (min-width: $desktop-breakpoint) {
+    width: 5rem;
+    height: 5rem;
+  }
+}

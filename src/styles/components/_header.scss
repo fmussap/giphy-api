@@ -1,0 +1,31 @@
+.header {
+  background: black;
+  border-style: solid;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom-width: .5rem;
+  border-bottom-color: white;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+.header__content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: $s-size 0;
+}
+
+.header__title {
+  color: white;
+  text-decoration: none;
+  h1 {
+    margin: 0;
+  }
+}
+
+@keyframes fade {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+}

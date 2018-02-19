@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Page correctly 1`] = `
+<ul
+  className="pagination"
+>
+  <Page
+    className="prev"
+    onClick={[Function]}
+    page="<"
+    pageLink="a"
+  />
+  <div
+    className="pagination-item active"
+    key="0"
+  >
+    <Page
+      onClick={[Function]}
+      page={1}
+      pageLink="a"
+    />
+  </div>
+  <Page
+    className="next"
+    onClick={[Function]}
+    page=">"
+    pageLink="a"
+  />
+</ul>
+`;

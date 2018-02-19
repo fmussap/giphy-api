@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render DashboardPage correctly 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="search-container"
+  >
+    <input
+      autoFocus={true}
+      className="text-input"
+      onChange={[Function]}
+      placeholder="Search GIFs"
+      type="text"
+      value=""
+    />
+    <img
+      className="img-search"
+      onClick={[Function]}
+      src="/images/magnify.png"
+      title="Search"
+    />
+  </div>
+  <div
+    className="gifs-filter-container"
+  >
+    <button
+      className="button all"
+      onClick={[Function]}
+    >
+      All
+    </button>
+    <button
+      className="button cats"
+      onClick={[Function]}
+    >
+      Cats
+    </button>
+    <button
+      className="button dogs"
+      onClick={[Function]}
+    >
+      Dogs
+    </button>
+  </div>
+  <Modal
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    closeTimeoutMS={0}
+    contentLabel=""
+    isOpen={false}
+    onRequestClose={[Function]}
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={false}
+    style={
+      Object {
+        "content": Object {
+          "background": "#000",
+          "border": "1px solid #000",
+          "borderRadius": "4px",
+          "bottom": "auto",
+          "left": "50%",
+          "marginRight": "-50%",
+          "outline": "none",
+          "overflow": "none",
+          "padding": "1rem",
+          "right": "auto",
+          "textAlign": "center",
+          "top": "50%",
+          "transform": "translate(-50%, -50%)",
+        },
+        "overlay": Object {
+          "backgroundColor": "rgba(64, 64, 64, 0.75)",
+          "position": "fixed",
+        },
+      }
+    }
+  >
+    <div>
+      <img
+        src=""
+        style={
+          Object {
+            "maxWidth": "90%",
+          }
+        }
+      />
+      <div
+        className="modal-title"
+      />
+      <CopyToClipboard
+        text=""
+      >
+        <div
+          className="copy-link"
+          onClick={[Function]}
+        >
+          Copy link
+        </div>
+      </CopyToClipboard>
+      <img
+        className="close-modal"
+        onClick={[Function]}
+        src="/images/close-circle-outline.png"
+        title="Close"
+      />
+    </div>
+  </Modal>
+  <div
+    className="gifs-list-container"
+  >
+    <div>
+      No gifs found
+    </div>
+  </div>
+</div>
+`;

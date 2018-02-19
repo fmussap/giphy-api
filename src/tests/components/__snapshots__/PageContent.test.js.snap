@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Page correctly 1`] = `
+<div
+  className="individual-gif-container "
+  onClick={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+  style={
+    Object {
+      "backgroundImage": "url(http:/test/still)",
+      "backgroundRepeat": "no-repeat",
+    }
+  }
+>
+  <div
+    className="individual-gif-info"
+  >
+    Any title
+  </div>
+</div>
+`;

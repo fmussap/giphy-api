@@ -1,0 +1,21 @@
+.button {
+  background: $button-bg;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 4px 2px -2px $dark-grey;
+  color: $button-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $base-font-size;
+  line-height: 1.2;
+  margin: $s-size;
+  outline: none;
+  padding: $s-size;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color .3s ease;
+}
+
+.button:hover {
+  background-color: $button-hv;
+}

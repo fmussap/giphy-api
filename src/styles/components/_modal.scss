@@ -1,0 +1,31 @@
+.close-modal {
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  margin-top: $m-size;
+}
+
+.modal-title {
+  color: white;
+  font-weight: 200;
+  margin-top: $m-size;
+  margin-bottom: $l-size;
+}
+
+.copy-link {
+  cursor: pointer;
+  color: white;
+  font-weight: 300;
+}
+
+.link-message {
+  color: yellow;
+  font-weight: 200;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
