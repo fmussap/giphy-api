@@ -1,4 +1,5 @@
 // set NODE_ENV depending on the environment
+console.log('NODE_ENV', process.env.NODE_ENV)
 if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = 'development'
 }

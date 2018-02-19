@@ -7,6 +7,7 @@ import * as actions from './type'
 export const getAllGifs = (page, max) => {
   return async dispatch => {
     let offset = page === 1 ? page : ((page - 1) * max) + 1
+    console.log('giphyKey', giphyKey)
     const url = `http://api.giphy.com/v1/gifs/trending?&offset=${offset}&api_key=${giphyKey}`
 
     return fetch(url, {
