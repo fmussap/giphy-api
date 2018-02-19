@@ -5,6 +5,7 @@ An app for searching animated GIFs created with **ReactJs** and **Redux**.
 To install it:
 1) Clone or download this repo;
 2) In the main directory run ``yarn install`` or ``npm install``
+3) You must use your own giphy api key with config info --> /imports/config/*.js
 
 ### `npm build:dev` or `yarn build:dev`
 Builds the app for development to the `public/dist` folder.<br>
