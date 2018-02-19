@@ -7,7 +7,7 @@ import * as actions from './type'
 export const getAllGifs = (page, max) => {
   return async dispatch => {
     let offset = page === 1 ? page : ((page - 1) * max) + 1
-    const url = `https://api.giphy.com/v1/gifs/trending?&offset=${offset}&api_key=${giphyKey}`
+    const url = `http://api.giphy.com/v1/gifs/trending?&offset=${offset}&api_key=${giphyKey}`
 
     return fetch(url, {
       method: 'GET'
@@ -32,7 +32,7 @@ export const getAllGifs = (page, max) => {
 export const getGifsPage = (type, page, max) => {
   return async dispatch => {
     let offset = page === 1 ? page : ((page - 1) * max) + 1
-    const url = `https://api.giphy.com/v1/gifs/search?q=${type}&offset=${offset}&api_key=${giphyKey}`
+    const url = `http://api.giphy.com/v1/gifs/search?q=${type}&offset=${offset}&api_key=${giphyKey}`
 
     return fetch(url, {
       method: 'GET'

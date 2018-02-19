@@ -9,15 +9,13 @@ const Pagination = ({ total, activePage, pageLink, onClick, max }) => {
   const next = '>'
   const nextPage = apage + 1 <= 199 ? apage + 1 : 199
   const prevPage = apage - 1 >= 1 ? apage - 1 : 1
-  // the giphy development api key only allows to load 199 pages.
-  // this projects is using the same key for production and development
-  // for production is necessary to ask for a new type of key.
-  const limit = process.env.NODE_ENV === 'development' ? 199 : null
+  // the giphy api only allows to load an offset of 4998 or in this case 199 pages.
+  const limit = total >= 200 ? 199 : total
 
   return (
     <ul className='pagination'>
       <Page className='prev' page={prev} pageLink={pageLink.replace('%page%', prev)} onClick={() => onClick(prevPage)} />
-      {pagination({ total: total >= 200 ? (!limit ? total : limit) : total, activePage: apage }).map((page, index) => {
+      {pagination({ total: limit, activePage: apage }).map((page, index) => {
         return (
           <div key={index} className={`pagination-item ${apage === page ? 'active' : ''}`}>
             <Page page={page} pageLink={pageLink.replace('%page%', page)} onClick={onClick} />
