@@ -8,6 +8,7 @@ export const Header = ({ startLogout }) => (
       <div className='header__content'>
         <Link className='header__title' to='/'>
           <h1>Animated GIF Search</h1>
+          <img src='/images/giphy-logo.gif' />
         </Link>
       </div>
     </div>
