@@ -30,4 +30,6 @@ By default, runs tests related to files changed since the last commit.
 
 Builds the app for production to the `build` folder.<br>
 
+Live on https://giphy-api-fmussap.herokuapp.com/
+
 that's it !!
