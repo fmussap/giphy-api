@@ -7,10 +7,11 @@ const Pagination = ({ total, activePage, pageLink, onClick, max }) => {
   const apage = activePage === 1 ? activePage : ((activePage - 1) / max) + 1
   const prev = '<'
   const next = '>'
-  const nextPage = apage + 1 <= 199 ? apage + 1 : 199
-  const prevPage = apage - 1 >= 1 ? apage - 1 : 1
-  // the giphy api only allows to load an offset of 4998 or in this case 199 pages.
   const limit = total >= 200 ? 199 : total
+  const nextPage = apage + 1 <= limit ? apage + 1 : limit
+  const prevPage = apage - 1 >= 1 ? apage - 1 : 1
+
+  // the giphy api only allows to load an offset of 4998 or in this case 199 pages.
 
   return (
     <ul className='pagination'>
